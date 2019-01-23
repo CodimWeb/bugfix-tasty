@@ -183,6 +183,10 @@ header .drophistory .drophistory__btns .btn.active_drop {
     font-style: normal
 }
 
+.body-wrapper {
+    overflow-x: hidden;
+}
+
 header {
     padding-top: 8.6875rem
 }
@@ -390,9 +394,9 @@ header .drophistory .items .items-inner .item-history:hover .history-weapon-hove
 }
 
 header .drophistory .items .items-inner .history-weapon-hover {
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all .45s;
+    -o-transition: all .45s;
+    transition: all .45s;
     word-wrap: break-word;
     opacity: 0;
     opacity-visibility: hidden;
@@ -404,11 +408,11 @@ header .drophistory .items .items-inner .history-weapon-hover {
     margin-top: .4rem;
     text-align: center;
     line-height: 1;
-    -webkit-transform: translateY(-50px);
-    -ms-transform: translateY(-50px);
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    transform: translateY(-80px);
     -webkit-border-radius: .3125rem;
-    border-radius: .3125rem
+    border-radius: .3125rem;
 }
 
 .form-control,
@@ -705,7 +709,7 @@ ul li {
     min-width: 153px;
     max-width: 153px;
     height: 76px;
-    margin: .8%;
+    margin: 5px;
     border-radius: 6px;
     background: linear-gradient(0deg, #c7c1fe 20%, #ffffff 100%);
     box-shadow: 0 0 5px 1px #150c26;
@@ -1921,6 +1925,10 @@ footer .footer__info .footer__menu li a:hover {
     border-color: #d9bf52
 }
 
+#vk_groups {
+    width: 100% !important;
+}
+
 footer .footer__info .footer__pay {
     margin-top: 2.625rem
 }
@@ -2899,7 +2907,8 @@ footer .footer__info .footer__pay h5 {
 .review__block-text {
     font-size: 1.125rem;
     margin-top: 1.7rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    text-align: left;
 }
 
 .review__block-items {
@@ -6943,7 +6952,10 @@ button.toast-close-button {
     display: -ms-flexbox;
     display: flex
 }
-
+.no_content {
+    width: 100%;
+    text-align: center;
+}
 .all_items-mobile,
 .loadmore-mobile {
     display: none
@@ -6961,7 +6973,8 @@ button.toast-close-button {
 }
 
 .items__block-tabs .profile__items {
-    padding: 2.5rem 0
+    padding: 2.5rem 0;
+    width: 100%;
 }
 
 .items__block-tabs .profile__items .price {
@@ -7965,7 +7978,8 @@ body.no_page-body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    text-align: left;
 }
 
 .top__week-table .top__week-user .top__week-name:hover {
@@ -8062,12 +8076,13 @@ body.no_page-body {
 
 #flakes_week tr:nth-child(1) {
     background: #cca445;
-    background: -webkit-linear-gradient(left, #cca445 0, #5c4821 100%);
-    background: -o-linear-gradient(left, #cca445 0, #5c4821 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#cca445), to(#5c4821));
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, #cca445), to(#5c4821));
-    background: linear-gradient(to right, #cca445 0, #5c4821 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0)
+    background-image: -webkit-linear-gradient(left, #cca445 0, #5c4821 100%);
+    background-image: -o-linear-gradient(left, #cca445 0, #5c4821 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#cca445), to(#5c4821));
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #cca445), to(#5c4821));
+    background-image: linear-gradient(to right, #cca445 0, #5c4821 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0);
+    background-attachment: fixed;
 }
 
 #flakes_week tr:nth-child(1) td {
@@ -8094,12 +8109,13 @@ body.no_page-body {
 
 #flakes_week tr:nth-child(2) {
     background: #8c8c8c;
-    background: -webkit-linear-gradient(left, #8c8c8c 0, #302f32 100%);
-    background: -o-linear-gradient(left, #8c8c8c 0, #302f32 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#8c8c8c), to(#302f32));
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, #8c8c8c), to(#302f32));
-    background: linear-gradient(to right, #8c8c8c 0, #302f32 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0)
+    background-image: -webkit-linear-gradient(left, #8c8c8c 0, #302f32 100%);
+    background-image: -o-linear-gradient(left, #8c8c8c 0, #302f32 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#8c8c8c), to(#302f32));
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8c8c8c), to(#302f32));
+    background-image: linear-gradient(to right, #8c8c8c 0, #302f32 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0);
+    background-attachment: fixed;
 }
 
 #flakes_week tr:nth-child(2) td {
@@ -8126,12 +8142,13 @@ body.no_page-body {
 
 #flakes_week tr:nth-child(3) {
     background: #864d4d;
-    background: -webkit-linear-gradient(left, #864d4d 0, #432525 100%);
-    background: -o-linear-gradient(left, #864d4d 0, #432525 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#864d4d), to(#432525));
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, #864d4d), to(#432525));
-    background: linear-gradient(to right, #864d4d 0, #432525 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0)
+    background-image: -webkit-linear-gradient(left, #864d4d 0, #432525 100%);
+    background-image: -o-linear-gradient(left, #864d4d 0, #432525 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#864d4d), to(#432525));
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #864d4d), to(#432525));
+    background-image: linear-gradient(to right, #864d4d 0, #432525 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0);
+    background-attachment: fixed;
 }
 
 #flakes_week tr:nth-child(3) td {
@@ -10651,6 +10668,7 @@ body.no_page-body {
     border-radius: .375rem;
     margin: 1%;
     padding: 0;
+    margin-bottom: 25px;
     position: relative;
 }
 .offer__box.col .svg-inline--fa.fa-w-12 {
@@ -15094,6 +15112,17 @@ td.table__challenge-level {
     }
 }
 @media (max-width:1152px) {
+    .header__menu {
+        margin: .3125rem 0 0 .25rem;
+    }
+    header .header__login .btn {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+    header .header__login .btn svg {
+        width: 1.2rem;
+        margin-right: 5px;
+    }
     header .header__profile-ava,
     main .card.banner::before {
         display: none
@@ -15157,7 +15186,7 @@ td.table__challenge-level {
         z-index: 100
     }
     header .header__login .btn {
-        padding: .625rem 1rem
+        font-size: 12px;
     }
     header .header__login .btn.btn-vklogin {
         margin-right: .75rem
@@ -15523,7 +15552,7 @@ td.table__challenge-level {
         margin-top: 1.875rem
     }
     main .items__block-tabs {
-        background: 0 0
+        /* background: 0 0 */
     }
     main .items__block-tabs .profile__items {
         padding-top: 1rem
@@ -15654,11 +15683,27 @@ td.table__challenge-level {
     .freecase .card-case .card-case__info {
         padding-bottom: 1rem
     }
+    .top__info {
+        margin-bottom: 40px;
+    }
     .top__counter .top__counter-timer {
         margin-bottom: 0
     }
+    .top__counter-timer span {
+        font-size: 3.5rem;
+        height: 7rem;
+        line-height: 7rem;
+        padding: 0 1rem;
+    }
     .top__select {
         margin-bottom: 1.5rem
+    }
+    .top__select .multiselect-native-select .btn-outline-primary {
+        padding-left: 2rem;
+    }
+    .top__select .multiselect-native-select .caret {
+        height: auto;
+        bottom: 0;
     }
     .top .top__week-table .top__week-user {
         padding-left: 0
@@ -15830,7 +15875,19 @@ td.table__challenge-level {
         font-size: .8125rem
     }
     .heading.heading__border {
-        text-align: center
+        text-align: center;
+        margin-top: 2rem;
+    }
+    body .heading.heading__border.heading__border-primary h1 {
+        width: 100% !important;
+        margin: 0;
+    }
+    body .heading.heading__border h1 .heading__icon.i-top {
+        display: none;
+    }
+    .heading.heading__border.heading__border-primary .line__l,
+    .heading.heading__border.heading__border-primary .line__r {
+        display: none;
     }
     .heading.heading__border h2 {
         width: 100%!important;
@@ -16049,13 +16106,17 @@ td.table__challenge-level {
     }
     #reviews-slider .review__block-items > a {
         display: block;
-        margin: 0 auto;
+        margin: 0 10px;
         width: 50%;
     }
     #reviews-slider .review__block-data {
         width: 100%;
         padding: 0;
-        text-align: center
+        text-align: center;
+        align-items: center;
+    }
+    .review__block-date {
+        margin-top: 3px;
     }
     #reviews-slider .review__block-text {
         margin-top: .5rem;
@@ -16086,8 +16147,12 @@ td.table__challenge-level {
         -ms-flex-order: 1;
         order: 1
     }
+    .vk-widget-wrapper {
+        max-width: 260px;
+        margin: 0 auto;
+    }
     footer .footer__info .footer__menu li a {
-        border: none;
+        border: none !important;
         display: inline;
         line-height: 2
     }
@@ -16436,6 +16501,27 @@ td.table__challenge-level {
     }
     #winner-table .out320 {
         display: none;
+    }
+    .auction-items .auction-item {
+        max-width: calc(100% - 30px);
+    }
+    .auction-items .auction-item .auction-item__info .auction-item__info-part span.close-title {
+        font-size: 10px;
+    }
+    .auction-items .auction-item .auction-item__info .auction-item__info-lot {
+        font-size: 11px;
+        top: 5px;
+    }
+    .auction-items .auction-item .auction-item__info .auction-item__info-part .close-focus {
+        font-size: 18px;
+    }
+    .auction-items .auction-item .auction-item__bet .auction-item__bet-price .bid-start {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+    .auction-items .auction-item .auction-item__bet .auction-item__bet-makeBid .makeBet {
+        font-size: 20px;
+        line-height: 22px;
     }
     /* end Аукцион */
     #artifact_dota .artifact .artifact-case {
@@ -16845,6 +16931,14 @@ td.table__challenge-level {
     .offer__box-modal .offer-notes li::before {
         display: none
     }
+    .top .top__week-table .top__week-earned .bonus.bonus__coin,
+    .top .top__week-table .top__week-user .top__week-name, 
+    .top .top__week-table tbody td {
+        font-size: 12px;
+    }
+    .top .top__week-table tbody td {
+        padding: 0.3rem;
+    }
 }
 @media (max-width:480px) {
 
@@ -17024,7 +17118,9 @@ td.table__challenge-level {
         font-size: .6rem
     }
     #reviews-slider .review__block-items {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         margin: 0 auto;
         width: 100%;
     }
@@ -17127,7 +17223,14 @@ td.table__challenge-level {
     .top .top__week-table .top__week-earned .bonus.bonus__coin,
     .top .top__week-table .top__week-user .top__week-name,
     .top .top__week-table tbody tr td {
-        font-size: .75rem
+        font-size: .65rem
+    }
+    main .table th {
+        font-size: 8px;
+        padding: .5rem .3rem;
+    }
+    .top .top__week-table .top__week-user .top__week-ava {
+        display: none;
     }
     .top .top__week-table .top__week-earned .bonus.bonus__coin {
         padding: 0
@@ -17174,6 +17277,19 @@ td.table__challenge-level {
         width: 7rem;
         margin-left: auto;
         margin-right: auto
+    }
+    .reviews .review__block-items .iteamblock {
+        max-width: calc(50% - 20px);
+        width: calc(50% - 20px);
+        min-width: 0;
+    }
+    .reviews .review__block-items .name {
+        width: 100% !important;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .reviews .review__block-items .iteamblock img {
+        max-width: 100%;
     }
     .reviews .review__block-items .review__case {
         margin-left: 0;
@@ -17300,7 +17416,9 @@ td.table__challenge-level {
     .farmcase-header__nomoney .price__qual-addmoney {
         font-size: 10px
     }
-
+    .case__img_layout {
+        height: 120px;
+    }
 }
 
 /* ????????? */
@@ -17317,5 +17435,22 @@ td.table__challenge-level {
 @media (min-width:62em) {
     .featurette-heading {
         margin-top: 7rem
+    }
+}
+
+@media (max-width: 667px) and (min-aspect-ratio: 13/9) {
+    header {
+        padding-top: 5.625rem;
+    }
+    header .navbar {
+        padding: 1rem;
+    }
+    header .header__profile.card {
+        top: 30px;
+    }
+    .offer__box.col {
+        margin: 0 10px 25px;
+        min-width: calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 }

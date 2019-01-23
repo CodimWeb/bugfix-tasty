@@ -459,6 +459,9 @@ jQuery(document).ready(function () {
         $("#author_pudge").modal('hide');
         return false;
     });
+    $('.modal').on('hide.bs.modal', function(){
+        $('.modal-backdrop').remove();
+    });
 
     SliderReviews.init();
     $(".go_event").click(function () {
@@ -4324,6 +4327,9 @@ $(function () {
 function lotsGrid(){
     var $grid = $('.grid').isotope({
         itemSelector: '.auction-item',
+        masonry: {
+            isFitWidth: true
+        },
         getSortData: {
             dtend: '.dtend parseInt',
             dtadd: '.dtadd parseInt',
